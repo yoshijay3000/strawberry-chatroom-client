@@ -1,0 +1,150 @@
+body {
+  background: radial-gradient(
+    circle,
+    rgba(192, 192, 192, 1) 45%,
+    rgba(229, 228, 226, 1) 100%
+  );
+}
+
+.wrap {
+  height: 100vh;
+}
+
+.btn-primary {
+  background-color: #59c9a5 !important;
+  border-color: transparent !important;
+  font-family: "Londrina Solid", cursive;
+}
+
+.btn-primary:hover {
+  background-color: #57b497 !important;
+}
+
+.btn-outline-light {
+  font-family: "Londrina Solid", cursive;
+  border: 2px solid #f8f9fa !important;
+}
+
+.join-block {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 5px #808080;
+  color: #59c9a5;
+  font-family: "Londrina Solid", cursive;
+  min-width: 400px;
+}
+
+.strawberry-icon {
+  max-height: 50px;
+}
+
+.enter-chat {
+  width: 98%;
+  font-size: 20px !important;
+  border-radius: 20px !important;
+}
+
+.gray-input {
+  background-color: #e5e4e2 !important;
+  border: none !important;
+  border-radius: none;
+}
+
+.gray-input:focus {
+  box-shadow: none !important;
+}
+
+.room-header {
+  max-width: 800px;
+  font-family: "Londrina Solid", cursive;
+  background-color: #59c9a5;
+  color: white;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #212529;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.room-block-wrap {
+  max-width: 800px;
+  border: 2px solid white;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.chat-block-outer {
+  background-color: #fffafa;
+  height: 70vh;
+}
+
+.chat-block {
+  border-radius: 5px;
+  height: 50vh;
+  overflow: auto;
+  flex-grow: 1;
+}
+
+.message-block .message {
+  border-radius: 20px;
+  width: fit-content;
+  background-color: #def1e5;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.message-block .user {
+  font-weight: bold;
+  color: #59c9a5;
+}
+
+.message-block .time {
+  font-size: 12px;
+  font-weight: normal;
+  color: gray;
+}
+
+.message-block.mine .message {
+  background-color: #e8e8e8;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.message-block.mine .user {
+  text-align: right;
+}
+
+.annoucement .message {
+  font-weight: bold;
+  color: gray;
+}
+
+.message a {
+  word-break: break-all;
+}
+
+.chat-input {
+  max-width: 800px;
+}
+
+.users-in-rooms {
+  background-color: #dcdcdc;
+  height: 70vh;
+}
+
+.users-in-rooms .list-group {
+  overflow: auto;
+}
+
+.ind-user::before {
+  content: url("/images/onlineIcon.png");
+}
+
+@media only screen and (max-width: 576px) {
+  .join-block {
+    min-width: 80vw;
+  }
+  .users-in-rooms {
+    height: 18vh;
+  }
+  .chat-block {
+    height: 45vh;
+  }
+}
