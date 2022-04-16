@@ -8,7 +8,8 @@ import MessageBlock from "./subcomponents/MessageBlock";
 import UsersInRoom from "./subcomponents/UsersInRoom";
 
 let socket;
-const SOCKET_SERVER = process.env.REACT_APP_SOCKET_SERVER;
+const SOCKET_SERVER =
+  process.env.REACT_APP_SOCKET_SERVER || "http://localhost:5000";
 
 const Chat = () => {
   const location = useLocation();
